@@ -2,36 +2,34 @@
     <sys_hub_flow action="INSERT_OR_UPDATE">
         <access>public</access>
         <acls/>
-        <active>false</active>
+        <active>true</active>
         <annotation/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
-        <compiler_build/>
         <copied_from>9a41b6c2ff12101088e94ee9453bf1a4</copied_from>
         <copied_from_name>FlowTemplate_Empty</copied_from_name>
         <description/>
         <internal_name>testgit</internal_name>
         <label_cache>[{"name":"89e388cc-dfde-41f5-bdba-a16913d6e0ef.__action_status__","label":"1 - Log➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"89e388cc-dfde-41f5-bdba-a16913d6e0ef.__dont_treat_as_error__","label":"1 - Log➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
-        <latest_snapshot/>
-        <master_snapshot/>
+        <master_snapshot>a64e6a5797103110a782fcdfe153af04</master_snapshot>
         <name>test-git</name>
         <natlang/>
         <outputs/>
         <pre_compiled>false</pre_compiled>
-        <remote_trigger_id/>
+        <remote_trigger_id>324e6a5797103110a782fcdfe153af18</remote_trigger_id>
         <run_as>user</run_as>
         <run_with_roles/>
         <sc_callable>false</sc_callable>
         <show_draft_actions>false</show_draft_actions>
         <show_triggered_flows>false</show_triggered_flows>
-        <status>draft</status>
+        <status>published</status>
         <sys_class_name>sys_hub_flow</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-07-28 14:26:42</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>b55182fd2fd03110c621c886f699b682</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>test-git</sys_name>
         <sys_overrides/>
         <sys_package display_value="GitPoc" source="x_1094801_gitpoc">78d4f9b12fd03110c621c886f699b66d</sys_package>
@@ -39,11 +37,68 @@
         <sys_scope display_value="GitPoc">78d4f9b12fd03110c621c886f699b66d</sys_scope>
         <sys_update_name>sys_hub_flow_b55182fd2fd03110c621c886f699b682</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-08-02 09:29:01</sys_updated_on>
+        <sys_updated_on>2023-08-02 09:33:58</sys_updated_on>
         <type>flow</type>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=b55182fd2fd03110c621c886f699b682"/>
     <sys_variable_value action="delete_multiple" query="document_key=b55182fd2fd03110c621c886f699b682"/>
+    <sys_flow_timer_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <day_of_month>1</day_of_month>
+        <day_of_week/>
+        <name/>
+        <run_period/>
+        <run_start>2023-08-02 09:33:58</run_start>
+        <sys_class_name>sys_flow_timer_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-02 09:33:58</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>324e6a5797103110a782fcdfe153af18</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="GitPoc">78d4f9b12fd03110c621c886f699b66d</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-02 09:33:58</sys_updated_on>
+        <time>1970-01-02 04:00:00</time>
+        <timer_type>11</timer_type>
+    </sys_flow_timer_trigger>
+    <sys_flow_trigger_auto_script action="delete_multiple" query="name=Trigger:324e6a5797103110a782fcdfe153af18^sys_idNOT INf64e6a5797103110a782fcdfe153af18"/>
+    <sys_flow_trigger_auto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_time/>
+        <name>Trigger:324e6a5797103110a782fcdfe153af18</name>
+        <offset/>
+        <offset_type>0</offset_type>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek/>
+        <run_period/>
+        <run_start>2023-08-02 09:33:58</run_start>
+        <run_time>1970-01-02 04:00:00</run_time>
+        <run_type>daily</run_type>
+        <script><![CDATA[sn_flow_trigger.FlowTriggerAPI.fireTimerTrigger('324e6a5797103110a782fcdfe153af18');]]></script>
+        <sys_class_name>sys_flow_trigger_auto_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-02 09:33:58</sys_created_on>
+        <sys_id>f64e6a5797103110a782fcdfe153af18</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="GitPoc">78d4f9b12fd03110c621c886f699b66d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-02 09:33:58</sys_updated_on>
+        <time_zone/>
+        <trigger display_value="">324e6a5797103110a782fcdfe153af18</trigger>
+        <upgrade_safe>true</upgrade_safe>
+    </sys_flow_trigger_auto_script>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=b55182fd2fd03110c621c886f699b682"/>
     <sys_hub_trigger_instance action="delete_multiple" query="flow=b55182fd2fd03110c621c886f699b682^sys_idNOT IN9f914afd2fd03110c621c886f699b636"/>
     <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
         <comment/>
@@ -54,10 +109,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-07-28 14:27:53</sys_created_on>
         <sys_id>9f914afd2fd03110c621c886f699b636</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-08-02 09:29:00</sys_updated_on>
+        <sys_updated_on>2023-08-02 09:33:58</sys_updated_on>
         <trigger_definition display_value="Daily">89142dc0c32222002841b63b12d3ae8a</trigger_definition>
         <trigger_inputs/>
         <trigger_outputs/>
@@ -102,7 +157,6 @@
         <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
         <action_type_parent/>
         <comment/>
-        <compiled_snapshot/>
         <display_text/>
         <flow display_value="test-git">b55182fd2fd03110c621c886f699b682</flow>
         <order>1</order>
@@ -111,10 +165,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-07-28 14:27:53</sys_created_on>
         <sys_id>53914afd2fd03110c621c886f699b63d</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_scope display_value="GitPoc">78d4f9b12fd03110c621c886f699b66d</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-08-02 09:29:00</sys_updated_on>
+        <sys_updated_on>2023-08-02 09:33:58</sys_updated_on>
         <ui_id>89e388cc-dfde-41f5-bdba-a16913d6e0ef</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=53914afd2fd03110c621c886f699b63d"/>
@@ -126,10 +180,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-07-28 14:27:54</sys_created_on>
         <sys_id>93914afd2fd03110c621c886f699b63f</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-07-28 14:27:54</sys_updated_on>
-        <value>test</value>
+        <sys_updated_on>2023-08-02 09:33:43</sys_updated_on>
+        <value>Testing GIT in ServiceNow</value>
         <variable display_value="Message">23c1bcc6531003003bf1d9109ec587e5</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_5bc1bcc6531003003bf1d9109ec587d4^id=53914afd2fd03110c621c886f699b63d"/>
@@ -143,6 +197,167 @@
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_b55182fd2fd03110c621c886f699b682"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_b55182fd2fd03110c621c886f699b682"/>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_b55182fd2fd03110c621c886f699b682"/>
-    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=b55182fd2fd03110c621c886f699b682"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=b55182fd2fd03110c621c886f699b682^sys_idNOT INbe4e6a5797103110a782fcdfe153af19"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.RunAlways</binding_strategy>
+        <plan/>
+        <plan_id>b55182fd2fd03110c621c886f699b682</plan_id>
+        <snapshot>a64e6a5797103110a782fcdfe153af04</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-02 09:33:58</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>be4e6a5797103110a782fcdfe153af19</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-02 09:33:58</sys_updated_on>
+        <trigger display_value="">324e6a5797103110a782fcdfe153af18</trigger>
+    </sys_flow_trigger_plan>
     <sys_flow_subflow_plan action="delete_multiple" query="plan_id=b55182fd2fd03110c621c886f699b682"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>9a41b6c2ff12101088e94ee9453bf1a4</copied_from>
+        <copied_from_name/>
+        <description/>
+        <internal_name>testgit</internal_name>
+        <label_cache>[{"name":"89e388cc-dfde-41f5-bdba-a16913d6e0ef.__action_status__","label":"1 - Log➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"89e388cc-dfde-41f5-bdba-a16913d6e0ef.__dont_treat_as_error__","label":"1 - Log➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master>true</master>
+        <name>test-git</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="test-git">b55182fd2fd03110c621c886f699b682</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-02 09:33:58</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a64e6a5797103110a782fcdfe153af04</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="GitPoc">78d4f9b12fd03110c621c886f699b66d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-02 09:33:58</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=a64e6a5797103110a782fcdfe153af04"/>
+    <sys_variable_value action="delete_multiple" query="document_key=a64e6a5797103110a782fcdfe153af04"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=a64e6a5797103110a782fcdfe153af04^sys_idNOT INfa4e6a5797103110a782fcdfe153af0d"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="test-git">a64e6a5797103110a782fcdfe153af04</flow>
+        <name>Daily</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-02 09:33:58</sys_created_on>
+        <sys_id>fa4e6a5797103110a782fcdfe153af0d</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-02 09:33:58</sys_updated_on>
+        <trigger_definition display_value="Daily">89142dc0c32222002841b63b12d3ae8a</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>daily</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=fa4e6a5797103110a782fcdfe153af0d"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>fa4e6a5797103110a782fcdfe153af0d</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-02 09:33:58</sys_created_on>
+        <sys_id>ba4e6a5797103110a782fcdfe153af0e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-02 09:33:58</sys_updated_on>
+        <value>1970-01-01 20:00:00</value>
+        <variable display_value="Time">3ad4edc0c32222002841b63b12d3aee5</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_input_89142dc0c32222002841b63b12d3ae8a^id=fa4e6a5797103110a782fcdfe153af0d"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=a64e6a5797103110a782fcdfe153af04"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=a64e6a5797103110a782fcdfe153af04^sys_idNOT IN2a4e6a5797103110a782fcdfe153af05"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>a64e6a5797103110a782fcdfe153af04</id>
+        <name>test-git</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-02 09:33:58</sys_created_on>
+        <sys_id>2a4e6a5797103110a782fcdfe153af05</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-02 09:33:58</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=2a4e6a5797103110a782fcdfe153af05"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=a64e6a5797103110a782fcdfe153af04"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=a64e6a5797103110a782fcdfe153af04"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=a64e6a5797103110a782fcdfe153af04"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=a64e6a5797103110a782fcdfe153af04^sys_idNOT INbe4e6a5797103110a782fcdfe153af0b"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
+        <action_type_parent display_value="Log">0e0ae8c2531003003bf1d9109ec587c8</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="test-git">a64e6a5797103110a782fcdfe153af04</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-02 09:33:58</sys_created_on>
+        <sys_id>be4e6a5797103110a782fcdfe153af0b</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="GitPoc">78d4f9b12fd03110c621c886f699b66d</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-02 09:33:58</sys_updated_on>
+        <ui_id>89e388cc-dfde-41f5-bdba-a16913d6e0ef</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=be4e6a5797103110a782fcdfe153af0b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>be4e6a5797103110a782fcdfe153af0b</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-02 09:33:58</sys_created_on>
+        <sys_id>f24e6a5797103110a782fcdfe153af0d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-02 09:33:58</sys_updated_on>
+        <value>Testing GIT in ServiceNow</value>
+        <variable display_value="Message">23c1bcc6531003003bf1d9109ec587e5</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_5bc1bcc6531003003bf1d9109ec587d4^id=be4e6a5797103110a782fcdfe153af0b"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=be4e6a5797103110a782fcdfe153af0b"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=be4e6a5797103110a782fcdfe153af0b"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=a64e6a5797103110a782fcdfe153af04"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=a64e6a5797103110a782fcdfe153af04"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=a64e6a5797103110a782fcdfe153af04"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=a64e6a5797103110a782fcdfe153af04"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_a64e6a5797103110a782fcdfe153af04"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_a64e6a5797103110a782fcdfe153af04"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_a64e6a5797103110a782fcdfe153af04"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_a64e6a5797103110a782fcdfe153af04"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>b55182fd2fd03110c621c886f699b682</sys_id>
+        <latest_snapshot>a64e6a5797103110a782fcdfe153af04</latest_snapshot>
+        <compiler_build/>
+    </sys_hub_flow>
 </record_update>
